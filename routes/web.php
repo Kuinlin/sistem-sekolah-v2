@@ -10,6 +10,7 @@ use App\Http\Controllers\SchoolClass\StoreController as SchoolClassStoreControll
 use App\Http\Controllers\SchoolClass\EditController as SchoolClassEditController;
 use App\Http\Controllers\SchoolClass\UpdateController as SchoolClassUpdateController;
 use App\Http\Controllers\SchoolClass\DestroyController as SchoolClassDestroyController;
+use App\Http\Controllers\MajorController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,3 +48,6 @@ Route::name('classes.')->prefix('classes')->group(function () {
     Route::put('/{id}', SchoolClassUpdateController::class)->name('update');
     Route::delete('/{id}', SchoolClassDestroyController::class)->name('destroy');
 });
+
+// Major Management
+Route::resource('majors', MajorController::class);
