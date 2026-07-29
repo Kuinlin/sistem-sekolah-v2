@@ -5,39 +5,72 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
+
 {
     public function index()
     {
-        return "Displaying the list of students";
+        $title = 'Sistem Sekolah - Daftar Siswa';
+
+        $student = [
+            [
+                'id' => 1,
+                'nis' => '22100001',
+                'name' => 'Andi Lau',
+                'class' => 'XII TKJ 3',
+                'major' => 'TKJ'
+            ],
+            [
+                'id' => 2,
+                'nis' => '22100002',
+                'name' => 'Budi Santoso',
+                'class' => 'XII AKL 1',
+                'major' => 'AKL'
+
+            ]
+        ];
+
+        return view('students.index', [
+            'title' => $title,
+            'students' => $student
+        ]);
     }
 
     public function create()
-    {
-        return "Displaying the form to create a new student";
+    { $title = 'Catat Siswa Baru - Sistem Sekolah';
+        return view('students.create', [
+            'title' => $title
+        ]);
     }
 
-    public function store(Request $request)
+    public function store()
     {
-        return "Storing a new student";
+        return view('students.store');
     }
 
     public function show($id)
     {
-        return "Displaying student with ID: {$id}";
+        $title = 'Lembar siswa - Sistem Sekolah';
+        return view('students.show', [
+            'title' => $title
+        ]);
     }
 
     public function edit($id)
     {
-        return "Displaying the form to edit student with ID: {$id}";
+
+        $title = 'Ubah data siswa - sistem sekolah';
+        return view('students.edit', [
+            'title' => $title
+        ]);
     }
 
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        return "Updating student with ID: {$id}";
+        return view('students.update');
     }
 
     public function destroy($id)
     {
-        return "Deleting student with ID: {$id}";
+        return view('students.destroy');
     }
 }
