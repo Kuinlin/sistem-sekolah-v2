@@ -14,19 +14,25 @@ class StudentController extends Controller
         $student = [
             [
                 'id' => 1,
-                'nis' => '22100001',
-                'name' => 'Andi Lau',
-                'class' => 'XII TKJ 3',
+                'nis' => '1001',
+                'name' => 'Andi',
+                'class' => 'XII TKJ 1',
                 'major' => 'TKJ'
             ],
             [
                 'id' => 2,
-                'nis' => '22100002',
-                'name' => 'Budi Santoso',
-                'class' => 'XII AKL 1',
-                'major' => 'AKL'
-
-            ]
+                'nis' => '1002',
+                'name' => 'Budi',
+                'class' => 'XII TKJ 2',
+                'major' => 'TKJ'
+            ],
+            [
+                'id' => 3,
+                'nis' => '1003',
+                'name' => 'Nina',
+                'class' => 'XII TKJ 3',
+                'major' => 'TKJ'
+            ],
         ];
 
         return view('students.index', [
@@ -36,7 +42,7 @@ class StudentController extends Controller
     }
 
     public function create()
-    { $title = 'Catat Siswa Baru - Sistem Sekolah';
+    { $title = 'Sistem Sekolah - Tambah Siswa';
         return view('students.create', [
             'title' => $title
         ]);
@@ -49,16 +55,16 @@ class StudentController extends Controller
 
     public function show($id)
     {
-        $title = 'Lembar siswa - Sistem Sekolah';
+        $title = 'Sistem Sekolah - Detail Siswa';
         return view('students.show', [
             'title' => $title
         ]);
     }
-
     public function edit($id)
     {
 
-        $title = 'Ubah data siswa - sistem sekolah';
+        $title = 'Sistem Sekolah - Edit Siswa';
+
         return view('students.edit', [
             'title' => $title
         ]);
