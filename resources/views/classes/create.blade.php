@@ -4,19 +4,22 @@
 
 @section('content')
 
-    <x-page-header breadcrumb="Tahun Ajaran 2025/2026" title="Tambah Kelas" description="Isi data untuk menambahkan kelas baru." />
+    <x-page-header breadcrumb="Tahun Ajaran 2025/2026" title="Tambah Kelas"
+        description="Isi data untuk menambahkan kelas baru." />
 
     <form action="{{ route('classes.store') }}" method="POST" class="space-y-6 border border-[#E5E3DB] bg-white p-8">
         @csrf
 
         <div>
-            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Nama Kelas</label>
+            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Nama
+                Kelas</label>
             <input type="text" id="name" name="name" placeholder="Contoh: XII AKL 1"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="grade" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Tingkat</label>
+            <label for="grade"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Tingkat</label>
             <select id="grade" name="grade"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="X">X</option>
@@ -26,7 +29,8 @@
         </div>
 
         <div>
-            <label for="major_id" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jurusan</label>
+            <label for="major_id"
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Jurusan</label>
             <select id="major_id" name="major_id"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="">Pilih jurusan</option>
@@ -37,7 +41,8 @@
         </div>
 
         <div>
-            <label for="teacher_id" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Wali Kelas</label>
+            <label for="teacher_id" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Wali
+                Kelas</label>
             <select id="teacher_id" name="teacher_id"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="">Pilih wali kelas</option>
@@ -48,9 +53,11 @@
         </div>
 
         <div class="flex justify-end gap-4 border-t border-[#EFEDE6] pt-6">
-            <a href="{{ route('classes.index') }}" class="px-4 py-2.5 text-sm font-medium text-slate-500 hover:text-[#16213A]">Batal</a>
+            <a href="{{ route('classes.index') }}"
+                class="px-4 py-2.5 text-sm font-medium text-slate-500 hover:text-[#16213A]">Batal</a>
             <button type="submit"
-                class="bg-[#16213A] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#26324f]">Simpan Kelas</button>
+                class="bg-[#16213A] px-6 py-2.5 text-sm font-medium text-white transition hover:bg-[#26324f]">Simpan
+                Kelas</button>
         </div>
     </form>
 @endsection

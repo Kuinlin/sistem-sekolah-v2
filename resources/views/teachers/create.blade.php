@@ -10,19 +10,19 @@
         @csrf
 
         <div>
-            <label for="nip" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIP</label>
+            <label for="nip" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">NIP</label>
             <input type="text" id="nip" name="nip" placeholder="Contoh: 198501012024"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Nama Lengkap</label>
+            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Nama Lengkap</label>
             <input type="text" id="name" name="name" placeholder="Nama lengkap guru"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jenis Kelamin</label>
+            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Jenis Kelamin</label>
             <select id="gender" name="gender"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="Laki-Laki">Laki-laki</option>
@@ -31,19 +31,19 @@
         </div>
 
         <div>
-            <label for="subject" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Mata Pelajaran</label>
+            <label for="subject" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Mata Pelajaran</label>
             <input type="text" id="subject" name="subject" placeholder="Mata pelajaran yang diampu"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="phone_number" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">No. Telepon</label>
+            <label for="phone_number" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">No. Telepon</label>
             <input type="text" id="phone_number" name="phone_number" placeholder="Contoh: 08123456789"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm placeholder:text-slate-400 focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="status" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Status</label>
+            <label for="status" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Status</label>
             <select id="status" name="status"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="Aktif">Aktif</option>

@@ -18,15 +18,15 @@
 
         <dl class="divide-y divide-[#EFEDE6] text-sm">
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Kode Jurusan</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Kode Jurusan</dt>
                 <dd class="font-medium text-[#16213A]">{{ $major['code'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Nama Jurusan</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Nama Jurusan</dt>
                 <dd class="font-medium text-[#16213A]">{{ $major['name'] }}</dd>
             </div>
             <div class="px-8 py-4">
-                <dt class="mb-2 uppercase tracking-[0.1em] text-xs text-slate-400">Deskripsi</dt>
+                <dt class="mb-2 uppercase tracking-widest text-xs text-slate-400">Deskripsi</dt>
                 <dd class="text-[#16213A]">{{ $major['description'] }}</dd>
             </div>
         </dl>

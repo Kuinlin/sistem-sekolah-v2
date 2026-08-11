@@ -19,23 +19,23 @@
 
         <dl class="divide-y divide-[#EFEDE6] text-sm">
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">NIS</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">NIS</dt>
                 <dd class="font-medium text-[#16213A]">2024001</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Nama Lengkap</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Nama Lengkap</dt>
                 <dd class="font-medium text-[#16213A]">Budi Ariyanto</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Jenis Kelamin</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Jenis Kelamin</dt>
                 <dd class="font-medium text-[#16213A]">Laki-laki</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Jurusan</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Jurusan</dt>
                 <dd class="font-medium text-[#16213A]">RPL</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Kelas</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Kelas</dt>
                 <dd class="font-medium text-[#16213A]">XII AKL 1</dd>
             </div>
         </dl>

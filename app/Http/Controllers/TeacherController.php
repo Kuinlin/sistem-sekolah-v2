@@ -51,7 +51,7 @@ class TeacherController extends Controller
         return "Storing a new teacher";
     }
 
-    public function show($id)
+    public function show(string $id)
     {
         $title = 'Sistem Sekolah - Detail Guru';
 
@@ -71,7 +71,7 @@ class TeacherController extends Controller
         ]);
     }
 
-    public function edit($id)
+    public function edit(string $id)
     {
         $title = 'Sistem Sekolah - Edit Guru';
 
@@ -91,12 +91,12 @@ class TeacherController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, string $id)
     {
         return "Updating teacher with ID: {$id}";
     }
 
-    public function destroy($id)
+    public function destroy(string $id)
     {
         return "Deleting teacher with ID: {$id}";
     }

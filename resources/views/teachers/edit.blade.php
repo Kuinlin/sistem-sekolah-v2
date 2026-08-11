@@ -11,19 +11,19 @@
         @method('PUT')
 
         <div>
-            <label for="nip" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIP</label>
+            <label for="nip" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">NIP</label>
             <input type="text" id="nip" name="nip" value="{{ $teacher['nip'] }}"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Nama Lengkap</label>
+            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Nama Lengkap</label>
             <input type="text" id="name" name="name" value="{{ $teacher['name'] }}"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jenis Kelamin</label>
+            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Jenis Kelamin</label>
             <select id="gender" name="gender"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 @foreach (['Laki-Laki', 'Perempuan'] as $gender)
@@ -33,19 +33,19 @@
         </div>
 
         <div>
-            <label for="subject" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Mata Pelajaran</label>
+            <label for="subject" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Mata Pelajaran</label>
             <input type="text" id="subject" name="subject" value="{{ $teacher['subject'] }}"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="phone_number" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">No. Telepon</label>
+            <label for="phone_number" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">No. Telepon</label>
             <input type="text" id="phone_number" name="phone_number" value="{{ $teacher['phone'] }}"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="status" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Status</label>
+            <label for="status" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Status</label>
             <select id="status" name="status"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 @foreach (['Aktif', 'Tidak Aktif'] as $status)

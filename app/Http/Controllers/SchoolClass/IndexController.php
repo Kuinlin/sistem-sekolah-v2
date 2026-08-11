@@ -29,7 +29,7 @@ class IndexController extends Controller
 
         return view('classes.index', [
             'title' => $title,
-            'classes' => $classes,
+            'schoolClasses' => $classes,
         ]);
     }
 }

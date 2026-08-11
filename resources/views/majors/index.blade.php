@@ -25,27 +25,27 @@
             </thead>
 
             <tbody>
-                @foreach ($majors as $item)
+                @foreach ($majors as $major)
                     <tr class="border-b border-[#EFEDE6] hover:bg-[#FAF9F5]">
                         <td class="px-5 py-4 font-display text-lg text-[#A16207]">
                             {{ $loop->iteration }}
                         </td>
                         <td class="px-5 py-4 font-mono text-xs text-slate-500">
-                            {{ $item['code'] }}
+                            {{ $major['code'] }}
                         </td>
                         <td class="px-5 py-4 font-medium text-[#16213A]">
-                            {{ $item['name'] }}
+                            {{ $major['name'] }}
                         </td>
                         <td class="px-5 py-4 text-slate-500">
-                            {{ \Illuminate\Support\Str::limit($item['description'], 60) }}
+                            {{ \Illuminate\Support\Str::limit($major['description'], 60) }}
                         </td>
                         <td class="px-5 py-4">
                             <div class="flex justify-end gap-4 text-xs font-medium">
-                                <a href="{{ route('majors.show', $item['id']) }}"
+                                <a href="{{ route('majors.show', $major['id']) }}"
                                     class="text-[#16213A] hover:text-[#A16207]">Lihat</a>
-                                <a href="{{ route('majors.edit', $item['id']) }}"
+                                <a href="{{ route('majors.edit', $major['id']) }}"
                                     class="text-[#16213A] hover:text-[#A16207]">Ubah</a>
-                                <form action="{{ route('majors.destroy', $item['id']) }}" method="POST"
+                                <form action="{{ route('majors.destroy', $major['id']) }}" method="POST"
                                     onsubmit="return confirm('Hapus data jurusan ini?')">
                                     @csrf
                                     @method('DELETE')

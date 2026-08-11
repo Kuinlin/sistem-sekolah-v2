@@ -17,19 +17,19 @@
 
         <dl class="divide-y divide-[#EFEDE6] text-sm">
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Nama Kelas</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Nama Kelas</dt>
                 <dd class="font-medium text-[#16213A]">{{ $class['name'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Tingkat</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Tingkat</dt>
                 <dd class="font-medium text-[#16213A]">{{ $class['grade'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Jurusan</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Jurusan</dt>
                 <dd class="font-medium text-[#16213A]">{{ $class['major'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Wali Kelas</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Wali Kelas</dt>
                 <dd class="font-medium text-[#16213A]">{{ $class['homeroom_teacher'] }}</dd>
             </div>
         </dl>

@@ -18,27 +18,27 @@
 
         <dl class="divide-y divide-[#EFEDE6] text-sm">
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">NIP</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">NIP</dt>
                 <dd class="font-medium text-[#16213A]">{{ $teacher['nip'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Nama Lengkap</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Nama Lengkap</dt>
                 <dd class="font-medium text-[#16213A]">{{ $teacher['name'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Jenis Kelamin</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Jenis Kelamin</dt>
                 <dd class="font-medium text-[#16213A]">{{ $teacher['gender'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Mata Pelajaran</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Mata Pelajaran</dt>
                 <dd class="font-medium text-[#16213A]">{{ $teacher['subject'] }}</dd>
             </div>
             <div class="flex justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">No. Telepon</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">No. Telepon</dt>
                 <dd class="font-medium text-[#16213A]">{{ $teacher['phone'] }}</dd>
             </div>
             <div class="flex items-center justify-between px-8 py-4">
-                <dt class="uppercase tracking-[0.1em] text-xs text-slate-400">Status</dt>
+                <dt class="uppercase tracking-widest text-xs text-slate-400">Status</dt>
                 <dd><x-status-badge :status="$teacher['status']" /></dd>
             </div>
         </dl>

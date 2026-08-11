@@ -26,30 +26,30 @@
             </thead>
 
             <tbody>
-                @foreach ($teachers as $item)
+                @foreach ($teachers as $teacher)
                     <tr class="border-b border-[#EFEDE6] hover:bg-[#FAF9F5]">
                         <td class="px-5 py-4 font-display text-lg text-[#A16207]">
                             {{ $loop->iteration }}
                         </td>
                         <td class="px-5 py-4 font-mono text-xs text-slate-500">
-                            {{ $item['nip'] }}
+                            {{ $teacher['nip'] }}
                         </td>
                         <td class="px-5 py-4 font-medium text-[#16213A]">
-                            {{ $item['name'] }}
+                            {{ $teacher['name'] }}
                         </td>
                         <td class="px-5 py-4">
-                            {{ $item['subject'] }}
+                            {{ $teacher['subject'] }}
                         </td>
                         <td class="px-5 py-4">
-                            <x-status-badge :status="$item['status']" />
+                            <x-status-badge :status="$teacher['status']" />
                         </td>
                         <td class="px-5 py-4">
                             <div class="flex justify-end gap-4 text-xs font-medium">
-                                <a href="{{ route('teachers.show', ['id' => $item['id']]) }}"
+                                <a href="{{ route('teachers.show', ['id' => $teacher['id']]) }}"
                                     class="text-[#16213A] hover:text-[#A16207]">Lihat</a>
-                                <a href="{{ route('teachers.edit', ['id' => $item['id']]) }}"
+                                <a href="{{ route('teachers.edit', ['id' => $teacher['id']]) }}"
                                     class="text-[#16213A] hover:text-[#A16207]">Ubah</a>
-                                <form action="{{ route('teachers.destroy', ['id' => $item['id']]) }}" method="POST"
+                                <form action="{{ route('teachers.destroy', ['id' => $teacher['id']]) }}" method="POST"
                                     onsubmit="return confirm('Hapus data guru ini?')">
                                     @csrf
                                     @method('DELETE')
