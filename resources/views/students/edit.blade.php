@@ -14,20 +14,20 @@
     <form action="" method="POST" class="space-y-6 border border-[#E5E3DB] bg-white p-8">
         <div>
             <label for="nis"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">NIS</label>
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">NIS</label>
             <input type="text" id="nis" name="nis" value="2024001"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Nama
+            <label for="name" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Nama
                 Lengkap</label>
             <input type="text" id="name" name="name" value="Budi Ariyanto"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
 
         <div>
-            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jenis
+            <label for="gender" class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Jenis
                 Kelamin</label>
             <select id="gender" name="gender"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
@@ -38,7 +38,7 @@
 
         <div>
             <label for="major"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Jurusan</label>
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Jurusan</label>
             <select id="major" name="major"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
                 <option value="" selected>AKL</option>
@@ -49,7 +49,7 @@
 
         <div>
             <label for="class"
-                class="mb-1.5 block text-xs font-semibold uppercase tracking-[0.1em] text-[#16213A]">Kelas</label>
+                class="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-[#16213A]">Kelas</label>
             <input type="text" id="class" name="class" value="XII AKL 1"
                 class="w-full border border-[#D9D6CD] bg-[#FCFBF8] px-3.5 py-2.5 text-sm focus:border-[#A16207] focus:bg-white focus:outline-none">
         </div>
