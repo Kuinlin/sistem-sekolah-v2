@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\TeacherController;  
+use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SchoolClass\IndexController as SchoolClassIndexController;
 use App\Http\Controllers\SchoolClass\ShowController as SchoolClassShowController;
@@ -20,11 +20,11 @@ Route::get('/', function () {
 Route::name('students.')->prefix('students')->group(function () {
     Route::get('/', [StudentController::class, 'index'])->name('index');
     Route::get('/create', [StudentController::class, 'create'])->name('create');
+    Route::get('/{student}', [StudentController::class, 'show'])->name('show')->whereNumber('id');
     Route::post('/', [StudentController::class, 'store'])->name('store');
-    Route::get('/{id}', [StudentController::class, 'show'])->name('show');
-    Route::get('/{id}/edit', [StudentController::class, 'edit'])->name('edit');
-    Route::put('/{id}', [StudentController::class, 'update'])->name('update');
-    Route::delete('/{id}', [StudentController::class, 'destroy'])->name('destroy');
+    Route::get('/{student}/edit', [StudentController::class, 'edit'])->name('edit');
+    Route::put('/{student}', [StudentController::class, 'update'])->name('update')->whereNumber('id');
+    Route::delete('/{student}', [StudentController::class, 'destroy'])->name('destroy')->whereNumber('id');
 });
 
 // Teacher Management

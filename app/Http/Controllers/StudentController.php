@@ -2,81 +2,83 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Student\StoreRequest;
+use App\Http\Requests\Student\UpdateRequest;
+use App\Models\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
     public function index()
     {
-        $title = 'Sistem Sekolah - Daftar Siswa';
+        $title = "Sistem Sekolah - Daftar Siswa";
+        $students = Student::select(['id', 'nis', 'name', 'class', 'major'])
+        ->get();
 
-        $student = [
-            [
-                'id' => 1,
-                'nis' => '1001',
-                'name' => 'Andi',
-                'class' => 'XII TKJ 1',
-                'major' => 'TKJ'
-            ],
-            [
-                'id' => 2,
-                'nis' => '1002',
-                'name' => 'Budi',
-                'class' => 'XII TKJ 2',
-                'major' => 'TKJ'
-            ],
-            [
-                'id' => 3,
-                'nis' => '1003',
-                'name' => 'Nina',
-                'class' => 'XII TKJ 3',
-                'major' => 'TKJ'
-            ],
-        ];
+            return view('students.index', [
+                'title' => $title,
+                'students' => $students
+            ]);
+    }
 
-        return view('students.index', [
+    public function show(Student $student)
+    {
+        $title = "Sistem Sekolah - Detail Siswa";
+
+        return view('students.show', [
             'title' => $title,
-            'students' => $student
+            'student' => $student
         ]);
     }
 
     public function create()
     {
-        $title = 'Sistem Sekolah - Tambah Siswa';
+        $title = "Sistem Sekolah - Tambah Siswa";
         return view('students.create', [
             'title' => $title
         ]);
     }
 
-    public function store()
+    public function store(StoreRequest $request)
     {
-        return view('students.store');
+        // Validasi
+        $validatedRequest = $request->validated();
+
+        //Tambahkan data ke database
+        Student::create($validatedRequest);
+
+        //Handle if success
+        return redirect()->route('students.index');
     }
 
-    public function show($id)
+    public function edit(Student $student)
     {
-        $title = 'Sistem Sekolah - Detail Siswa';
-        return view('students.show', [
-            'title' => $title
-        ]);
-    }
-    public function edit($id)
-    {
-
-        $title = 'Sistem Sekolah - Edit Siswa';
+        $title = "Sistem Sekolah - Edit Siswa";
 
         return view('students.edit', [
-            'title' => $title
+            'title' => $title,
+            'student' => $student,
         ]);
     }
 
-    public function update($id)
+    public function update(Student $student, UpdateRequest $request)
     {
-        return view('students.update');
+        // Validasi
+        $validatedRequest = $request->validated();
+
+        // Update data
+        $student->update($validatedRequest);
+
+        // Handle if success
+        return redirect()->route('students.index');
     }
 
-    public function destroy($id)
+    public function destroy(Student $student)
     {
-        return view('students.destroy');
+        // Delete data
+        $student->delete();
+
+        // Handle if success
+        return redirect()->route('students.index');
     }
 }
